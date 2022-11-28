@@ -1,0 +1,28 @@
+1.
+Create a class Customer with following attributes:
+	customerId (String)
+	name (String)
+	email (String)
+	age (int)
+Write a menu driven program that shows following menu:
+	1. Create New Customer
+	2. Search Customer
+	3. Show Senior Citizen Customers
+	4. Exit
+The program must terminate only when Choice no. 4 is entered.
+
+When Choice no. 1 is entered, the program must accept a user
+input for Customer and add the record into the database.
+
+When Choice no. 2 is entered, the program must accept a user
+input for Customer ID and display the details of that 
+customer. The program must throw CustomerNotFoundException
+if the ID is invalid.
+
+When Choice no. 3 is entered, the program must display only
+those Customer details who are Senior Citizens.
+(Age 65 and Above)
+
+(Note: Implementation of DAO Pattern is must)
+
+
