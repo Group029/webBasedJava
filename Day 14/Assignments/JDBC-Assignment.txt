@@ -1,0 +1,19 @@
+Create a class Movie with following attributes:
+	movieId (String)
+	title (String)
+	likes (int) //percentage
+
+Create a table Movie_Master with relevant columns and add
+some sample records into it.
+
+Write a menu driven program that shows following options:
+1. Update Movie Rating
+2. Delete Movie with Low Ratings
+3. Exit
+
+The 1st option must ask for the Movie ID and the new value for
+LIKES and perform updation accordingly.
+
+The second option must ask for the value for LIKES and delete
+the movie records having LIKES below that value.
+Show the no. of records deleted.
