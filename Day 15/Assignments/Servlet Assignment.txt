@@ -1,0 +1,32 @@
+Create a table Student_Master to store information about:
+		Exam Seat No
+		Name
+		Marks obtained in Phy, Chem, Maths
+		Percentage
+		Grade	
+
+Create a HTML Page that provides to Hyperlinks:	
+	Add Student Entry
+	Get Result
+
+When clicked the 1st link, show a HTML page that produces a
+form to accept the details like:
+	Exam Seat No, Name and 3 Subject Marks with SUBMIT
+	Button.
+
+	When the button is clicked, calculate Percentage and
+	Grade e.g. First Class, Second Class, Distinction
+	and store the relevant information into the database
+	table. Display appropriate message to the user
+	after successful addition of the record.
+
+When clicked the 2nd link, show a HTML page that produces a
+form to accept the Exam Seat No. with SUBMIT button.
+
+	When the button is clicked, display the entire 
+	RESULT of that student.
+
+	Display appropriate message if the entered SEAT NO is
+	incorrect.
+
+NOTE**  : Handle HTTP POST Request

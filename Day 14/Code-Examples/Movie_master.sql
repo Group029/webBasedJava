@@ -1,0 +1,10 @@
+create table Movie_master(MoiveID varchar(2) primary key, title varchar(20), Likes int);
+desc Movie_master;
+insert into Movie_master values("A","IronMan1",80);
+insert into Movie_master values("B","IronMan2",85);
+insert into Movie_master values("C","IronMan3",82);
+insert into Movie_master values("D","BlackPanther1",95);
+insert into Movie_master values("E","BlackPanther2",85);
+insert into Movie_master values("F","ThorLove&thander",55);
+insert into Movie_master values("G","JusticLegue",50);
+insert into Movie_master values("H","BatMan",51);
