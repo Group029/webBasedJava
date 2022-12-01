@@ -1,0 +1,18 @@
+Modify the previous assignment as per the following:
+
+1. Replace all .html with .jsp
+2. Modify the view of Search Student Operation in such a 
+	way that it shows the Student data with 2 buttons:
+	UPDATE and DELETE
+3. When UPDATE is clicked, display the same information
+	using Text Boxes so that User can edit the information
+	and click some button to perform the updation.
+4. When DELETE is clicked, display a page that shows some
+	ALERT message and asks user whether to proceed or not
+	IF user clicks NO, redirect the control to previous
+	page and if YES, perform DELETE operation.
+5. After UPDATE or DELETE, display appropriate message to the
+	user and redirect the control to the main page
+	that provides 2 hyperlinks.
+
+Hint: You need Session Management
