@@ -1,0 +1,30 @@
+EL: Expression Language
+
+This is a feature that allows to reduce the number of
+scriptlets in JSP.
+
+It works with a special syntax: ${<<expression>>}
+
+It provides several implicit objects:
+	requestScope
+		Allows to fetch the objects available in REQUEST scope
+	sessionScope
+		Allows to fetch the objects available in SESSION scope
+	applicationScope
+		Allows to fetch the objects available in APPLICATION 
+		scope
+	param
+		Allows to fetch request specific parameters
+
+
+
+
+
+
+
+
+
+
+
+
+

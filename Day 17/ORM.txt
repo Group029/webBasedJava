@@ -1,0 +1,22 @@
+ORM Principles:
+	Automated Persistence
+		Allows to perform CRUD operations without writing
+		SQL
+	Support for Mapping Metadata
+		Mapping between domain objects and relational
+		database tables is possible using some
+		metadata in the form of XML or Annotations
+	Query Operations
+		Supports query operations by using Classes
+		and their properties rather than tables
+		and their columns
+	Support for Performance Optimization
+		Provides support for Performance Optimization
+		through Fetching, Caching etc
+	Support for Obect Modeling
+		Support all the Object Modeling semantics
+		e.g. Inheritance, Composition etc
+
+
+
+
