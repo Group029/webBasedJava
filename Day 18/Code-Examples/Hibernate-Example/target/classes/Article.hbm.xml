@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "example.hibernate.entity.Article" table="Article_Master">
+      <id name = "artId" type = "int" column="art_id"/>            
+      <property name = "headLine" column = "art_headline" type = "string"/>
+      <property name = "publishedOn" column = "art_date" type = "LocalDate"/>           
+   </class>
+</hibernate-mapping>
