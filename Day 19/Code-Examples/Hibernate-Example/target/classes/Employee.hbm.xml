@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "example.hibernate.entity.Employee" table="Employee_Master" lazy="false">
+      <id name = "empNo" type = "int" column="emp_id"/>            
+      <property name = "empName" column = "emp_name" type = "string"/>
+      <property name = "mobileNo" column = "emp_mobile" type = "string"/>
+      <property name = "empSal" column = "emp_sal" type = "int"/>           
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,71 @@
+Session interface methods:
+
+save() --> DML INSERT
+load() --> DQL SELECT
+update() --> Not for DML UPDATE.
+	It is used to bring the DETACHED entity back into
+	PERSISTENT state		
+delete() --> DML DELETE
+
+Instance States:
+	An instance of a persistent class has several possible
+	states.
+
+	These states are defined with respect to persistent
+	context.
+
+	Persistent Context is the object that is solely 
+	responsible for handling persistence related 
+	operations.
+	E.g. In JDBC it is Connection and in Hibernate it
+		is Session
+
+	There are 3 states:
+	1. Transient
+		When an instance is not yet associated with
+		persistent context it is said to be in
+		Transient state.
+		It does not have its identity.
+
+	2. Persistent
+		When an instance is associated with
+		persistent context it is said to be in
+		Persistent state.
+		It has its identity.
+		Its state is reflected into DB when the
+		transaction is committed		
+	3. Detached	
+		The persistent context with which the object
+		is associated, if the context is closed, then
+		the object becomes Detached.
+
+Loading in Hibernate:
+	In Hibernate loading is done by 2 ways:
+		LAZY (DEFAULT)
+		When Session.load() is called, hibernate
+		does not hit the database immediately.
+		In fact it creates a PROXY and returns the 
+		same.
+
+		Hibernate does not hit the database until any
+		method is invoked on the field other than
+		identity.
+
+		As soon as that method is invoked, hibnated
+		decides to initialize the proxy by hitting
+		the database.
+
+		EAGER
+		When Session.load() is called, hibernate 
+		immediately hits the database and returns
+		the object of the entity class.
+
+		That means does not create proxy.
+		EAGER is enabled by setting lazy="false"
+		in HBM file
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+Hibernate Example Steps:
+
+1. Setup the environment by adding Hibernate specific JARs
+	This is done by using a Maven Build
+	Create a Maven Based Project
+
+2. Add Hibernate Dependencies
+
+3. Create an Entity Class: 
+	Article
+		artId (int)
+		headLine (String)
+		publishedOn (LocalDate)
+
+4. Provide mapping between Class-Table and Field-Column.
+	This is done by using a mapping file.
+	Conceptually it is called as HBM file
+
+	By convention, its name is :
+	<<Entity-Class-Name>>.hbm.xml
+
+5. Provide the Database Configuration Properties
+	This is done by using a configuration file.
+	Conceptually it is called as CFG file
+
+	It is done either by using:
+		hibernate.properties
+		hibernate.cfg.xml
+		Any XML file with some different name
+
+6. Write a Main Program
+		
+
+
+
+
+
+
+
+
+		

@@ -1,0 +1,9 @@
+
+
+<hibernate-mapping>
+   <class name = "example.hibernate.entity.Article" table="Article_Master" lazy="false">
+      <id name = "artId" type = "int" column="art_id"/>            
+      <property name = "headLine" column = "art_headline" type = "string"/>
+      <property name = "publishedOn" column = "art_date" type = "LocalDate"/>           
+   </class>
+</hibernate-mapping>
