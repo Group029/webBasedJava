@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+	<bean id="firstGreeting" class="example.spring.core.WelcomeService"/>
+	<bean id="secondGreeting" class="example.spring.core.HelloService"/>
+	
+	<!-- This result into Setter Injection 
+	<bean id = "firstPerson" class="example.spring.core.Person">
+		<property name="name" value="Micky"/>
+		<property name="profession" value="Cartoon"/>
+		<property name="age" value="30"/>
+	</bean>-->
+	<!-- This result into Constructor Injection 
+	<bean id = "secondPerson" class="example.spring.core.Person">
+		<constructor-arg value="Ratan Tata" index="1"/>
+		<constructor-arg value="Industrialist" index="2"/>
+		<constructor-arg value="72" index="0"/>
+	</bean>-->
+	<bean id = "firstUser" class="example.spring.core.User" destroy-method="destroyAgain" init-method="init">
+		<property name="firstName" value="Micky"/>
+		<property name="lastName" value="Donald"/>
+	</bean>    
+	
+	<bean id = "firstSpec" class="example.spring.core.MobileSpecification">
+		<property name="storage" value="64GB"></property>
+		<property name="backCamera" value="12 MP"/>
+		<property name="frontCamera" value="5 MP"/>
+	</bean>
+	
+	<bean id = "secondSpec" class="example.spring.core.MobileSpecification">
+		<property name="storage" value="128GB"></property>
+		<property name="backCamera" value="16 MP"/>
+		<property name="frontCamera" value="8 MP"/>
+	</bean>
+	
+	<bean id="myMobile" class="example.spring.core.MobilePhone">
+		<property name="make" value="Samsung"/>
+		<property name="model" value="Galaxy J8"/>
+		<!-- <property name="specification" ref="secondSpec"/> -->
+		<property name="specification">
+			<ref bean="secondSpec"/>
+		</property>
+	</bean>
+	<bean id="test1" class="example.spring.core.Test" lazy-init="true" scope="prototype"/>
+	<bean id="myPet" class="example.spring.core.Pet">
+		<property name="name" value="Tommy"/>
+		<property name="type" value="Dog"/> 
+	</bean>
+	<bean id="yourPet" class="example.spring.core.Pet"  primary="true">
+		<property name="name" value="Nikky"/>
+		<property name="type" value="Cat"/>
+	</bean>
+	<bean id="owner1" class="example.spring.core.Owner" autowire="byType">
+		<property name="name" value="Sameer"/>
+		<property name="city" value="Pune"/>
+	</bean>
+</beans>
+
+
+
+
+

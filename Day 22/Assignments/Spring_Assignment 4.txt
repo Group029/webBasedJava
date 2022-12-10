@@ -1,0 +1,12 @@
+Make modifications regarding the artifacts created in Assignment 2 and 3 as per the following:
+
+1) Implement Annotation Based Configuration
+
+2) Configure the following classes as Beans:
+	HighestDegree, Experience, Name, Passport
+3) Configure the class Profile as a component.
+
+4) Implement Auto-wiring
+
+5) Write a main proram to test the functionality
+

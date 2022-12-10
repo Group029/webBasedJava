@@ -1,0 +1,13 @@
+In annotation based metadata, the configuration unit is 
+specified using a simple Java Class.
+
+When @Bean is applied, the actual class object returned from
+that method gets registered as a Spring Bean against ID which
+is taken as the name of the method.
+
+To implement autowiring using annotation, @AutoWired is used
+In annotation based autowiring, the default behaviour is
+MANDATORY whereas in XML it is optional.
+
+Using annotation, it can be made optional by using:
+required=false

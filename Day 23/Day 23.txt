@@ -1,0 +1,36 @@
+Audience
+	takeSeats()  WHAT, BEFORE
+	turnOffMobile()
+	clap() WHAT, AFTER SUCCESS
+	demandForRefund() WHAT, IF Failure
+	goHome() WHAT, Irrespective of Success or Failure
+
+
+Musician
+	perform(){
+
+		//Performance in progress
+		//Exception
+	}
+
+
+Spring AOP Dependencies
+	1. aspectjweaver
+	2. aspectjrt
+
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjrt</artifactId>
+    <version>1.9.6</version>   
+</dependency>
+
+
+
+
+
+
+
+
+
+
+

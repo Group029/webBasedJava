@@ -1,0 +1,27 @@
+Theory
+	All questions are MCQ and not MRQ
+	Questions are of 3 types:
+			Concept Based
+			Code Based
+			API Based
+
+	Java Fundamentals : 50%
+	Colletions Framework: 20%
+	Exception Handling: 10%
+	IO		: 10%
+	Multithreading: 10%
+
+Practical
+	Only description about Functional Requirements
+	Do not write unncecessary extra code
+	Your code must adhere to the standard practices
+	and Naming conventions
+
+
+
+
+
+
+
+
+

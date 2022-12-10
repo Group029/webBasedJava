@@ -1,0 +1,21 @@
+In a Maven based project, if the file exists under 
+src/main/resources it is automatically added into
+project's classpath so that it can be loaded just by
+using its name through ClassPathXmlApplicationContext
+
+Injection Types:
+	Setter Injection:
+	Values for properties are injected using setters
+
+	Employee emp = new Employee();
+	emp.setEmpNo(101);
+	....
+
+	Constructor Injection
+	Values for properties are injected using parameterized
+	constructor
+	Employee emp = new Employee(101, ... );
+
+
+
+

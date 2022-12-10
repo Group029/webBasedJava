@@ -1,0 +1,20 @@
+Spring Application Steps:
+1. Create a Simple Maven Project
+
+2. Add Dependencies
+
+3. Create an Interface with some method
+
+4. Create a class which implements that interface
+
+5. Register a component as a BEAN in the Spring's configuration
+	unit.
+	There are 2 ways to provide Configuration Unit:
+	Using XML
+	Using Annotations
+
+6. Write Main Program
+
+
+
+

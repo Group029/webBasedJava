@@ -1,0 +1,31 @@
+Create the classes as per the following:
+1.	HighestDegree
+		name (String)
+		percentage (float)
+2.	Experience
+		industryType (String) e.g. IT/Chemical/Mechanical/Automobile etc
+		years (int)
+3.	Profile
+		candidateId (int)
+		name (String)
+		prCountry (String) e.g. Australia / England / USA
+		qualification (HighestDegree)
+		workExperience (Experience)
+		ieltsScore (float) (On the scale 1 to 10)
+	Implement a method public boolean isEligibleForPr() in such a way that
+	it calculates the points based upon some bench marks and returns the status
+	whether eligible or not		
+
+Register a bean of type Profile in the spring's configuration unit.
+Write a main program to test the functionality.
+
+Bench marks will be of your choice but ensure that the eligibility points criteria
+differs on the basis of country.
+E.g.
+Aus: 50
+Eng: 60
+US: 70
+Points Calculation:
+For BE / BTech 15, ME / MTech - 25, MBA, MCM, MCA - 20
+Experience: < 2 (10), 2- 5 (20), 5-10 (25), > 10 (30)
+ielts: <6 (4),7-8  (10), 9 (15), 10 (25)

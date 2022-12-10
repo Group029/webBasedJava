@@ -1,0 +1,6 @@
+Take any entity of your choice and perform:
+	Create New
+	Search
+	Show All
+
+Using a Web Application, Hibernate and Annotations

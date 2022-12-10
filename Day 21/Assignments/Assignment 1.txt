@@ -1,0 +1,12 @@
+Create a class DBConnection with following attributes:
+	driverClass, url, userName, password, sqlSelectQuery (All Strings)
+
+	Implement a method processQuery() in such a way that upon invocation, it opens
+a connection with the database, executes the query and displays the results from the table of your choice.	
+
+Register the bean of type DBConnection in the Spring's configuration unit.
+
+Write a main program to test the functionality
+
+
+	
